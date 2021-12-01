@@ -40,5 +40,13 @@ pipeline {
                 }
             }
         }
-    }   
+    }
+	post {
+		always {
+			echo "executed always"
+		}
+		success {
+			echo "executed when success"
+		}
+	}	
 }
